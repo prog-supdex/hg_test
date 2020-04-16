@@ -1,0 +1,17 @@
+con: &conn
+  username: username
+  password: password
+  host: 127.0.0.1
+  adapter: postgresql
+  encoding: utf8
+development:
+  database: happy_games_development
+  <<: *conn
+
+test:
+  database: happy_games_test
+  <<: *conn
+
+production:
+  database: happy_games_production
+  <<: *conn
