@@ -9,4 +9,6 @@ class Event < ApplicationRecord
     converter_html_to_pdf: 'converter_html_to_pdf',
     delete_folder: 'delete_folder'
   }
+
+  validates :name, :event_type, :param1, presence: true
 end
