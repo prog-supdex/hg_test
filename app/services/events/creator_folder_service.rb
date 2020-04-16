@@ -11,7 +11,7 @@ module Events
     def call
       dir_path = building_path(folder_name)
 
-      Dir.mkdir(dir_path) unless Dir.exist?(dir_path)
+      FileUtils.mkdir_p(dir_path) unless Dir.exist?(dir_path)
 
       dir_path
     end
