@@ -174,6 +174,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    shoulda-matchers (4.3.0)
+      activesupport (>= 4.2.0)
     slim (4.0.1)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
@@ -231,6 +233,7 @@ DEPENDENCIES
   rspec-rails (~> 4.0)
   rubyzip (~> 2.3)
   sass-rails (~> 5.0)
+  shoulda-matchers
   slim
   spring
   spring-watcher-listen (~> 2.0.0)
