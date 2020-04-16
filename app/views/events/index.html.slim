@@ -1,0 +1,16 @@
+table.table.table-bordered.col-sm-6
+  thead
+    tr
+      th
+        | Название события
+      th
+        | Первый параметр
+      th
+        | Второй параметр
+      th
+        | Второй параметр
+  tbody
+    = render partial: 'event', collection: @events
+
+.actions.col-sm-3
+  = link_to 'Создать событие', new_event_path

@@ -1,0 +1,5 @@
+tr
+  td=event.name
+  td=event.param1
+  td=event.param2
+  td= link_to 'Удалить', event_path(event.id), data: { confirm: 'Удалить?' }, method: :delete

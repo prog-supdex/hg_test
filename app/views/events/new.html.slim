@@ -1,0 +1,11 @@
+h4 Создание события
+= form_with(model: @event, method: :post, local: true, class: :with_validated) do |form|
+  = form_group_for(form, :name, label: false) do
+    = form.text_field :name, placeholder: 'Название', class: 'form-control'
+  = form_group_for(form, :event_type, label: false) do
+    = form.select :event_type, Event.event_types.to_a, class: 'form-control'
+  = form_group_for(form, :param1, label: false) do
+    = form.text_field :param1, placeholder: 'Первый аргумент', class: 'form-control'
+  .form-group
+    = form.text_field :param2, placeholder: 'Второй', class: 'form-control'
+  = form.button type: :submit, class: 'btn btn-primary'
