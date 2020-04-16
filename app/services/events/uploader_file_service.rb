@@ -22,7 +22,7 @@ module Events
 
       CreatorFolderService.new(target_folder).call
 
-      file_path = File.join(building_path(@target_folder), tempfile.original_filename)
+      file_path = File.join(building_path(target_folder), tempfile.original_filename)
 
       FileUtils.mv(tempfile.path, file_path)
 
