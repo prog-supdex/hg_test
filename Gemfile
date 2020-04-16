@@ -43,6 +43,7 @@ gem 'tty-tree'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'supcom2_replay_parser', '~> 0.3.2'
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
