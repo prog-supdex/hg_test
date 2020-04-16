@@ -16,7 +16,7 @@ module Events
 
       CreatorFolderService.new(target_folder_path).call
 
-      file_path = File.join(building_path(target_folder_path), "#{File.basename(path_to_replay, '.')}.txt")
+      file_path = File.join(building_path(target_folder_path), "#{File.basename(path_to_replay, '.*')}.txt")
 
       File.open(file_path, 'w+') { |f| f.write(replay_info) }
 
